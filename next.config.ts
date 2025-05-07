@@ -8,5 +8,5 @@ const nextConfig: NextConfig = {
   }
 }
 
-const withNextIntel = createNextIntlPlugin()
-export default withNextIntel(nextConfig)
+const withNextIntl = createNextIntlPlugin()
+export default withNextIntl(nextConfig)
