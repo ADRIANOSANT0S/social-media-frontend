@@ -7,7 +7,7 @@ type PictureProps = {
   quality?: 40 | 50 | 60 | 70 | 80 | 90 | 100
 }
 
-const Picture = ({ src, alt, className, quality }: PictureProps) => {
+const Picture = ({ src, alt, className, quality = 60 }: PictureProps) => {
   return (
     <Image
       src={src}
@@ -19,3 +19,5 @@ const Picture = ({ src, alt, className, quality }: PictureProps) => {
     />
   )
 }
+
+export default Picture
