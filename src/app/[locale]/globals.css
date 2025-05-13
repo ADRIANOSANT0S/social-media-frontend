@@ -4,4 +4,49 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+@layer utilities {
+  .content-wrapper {
+    @apply container w-[90%];
+  }
+
+  .text-large {
+    @apply text-lg font-normal whitespace-pre;
+  }
+
+  .button-base {
+    @apply py-2 w-full text-base font-medium flex items-center justify-center gap-2 rounded-full duration-300 cursor-pointer;
+  }
+
+  .small-title {
+    @apply text-xl font-bold;
+  }
+
+  .text-meddle {
+    @apply text-base font-normal text-slate-500;
+  }
+
+  .text-small {
+    @apply text-xs font-normal text-gray-500;
+  }
+
+  .highline-link {
+    @apply text-sky-500 hover:underline duration-300;
+  }
+
+  .overlay {
+    @apply inset-0 w-full h-full z-40;
+  }
+}
+
+@layer components {
+  .popup-wrapper {
+    @apply fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-[84vh] w-full max-w-[600px] z-50 bg-black px-8 py-4 rounded-2xl
+  }
+
+  .input {
+    @apply text-lg font-normal w-full border rounded px-3 pt-6 pb-2 bg-transparent text-white placeholder-transparent transition-all focus:outline-none focus:border-sky-500;
+  }
 }
