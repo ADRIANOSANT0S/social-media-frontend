@@ -1,1 +1,16 @@
-{}
+{
+  "Constants": {
+    "privacyPolicy": {
+      "linkTitle": "Política de Privacidade",
+      "linkChildren": "Política de Privacidade"
+    },
+    "cookiesPolicy": {
+      "linkTitle": "Política de Cookies",
+      "linkChildren": "Política de Cookies"
+    },
+    "termsServices": {
+      "linkTitle": "Termos de Serviço",
+      "linkChildren": "Termos de Serviço"
+    }
+  }
+}
