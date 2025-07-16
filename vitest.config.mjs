@@ -13,8 +13,6 @@ export default defineConfig({
         inline: ['next-intl']
       }
     },
-    include: ['/.src/features/**'],
-    exclude: ['*/**/.next', 'playwright.config.ts', 'postcss.config.mjs', '*.d.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html'],
